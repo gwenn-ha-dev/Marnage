@@ -142,7 +142,7 @@ private struct NextEventBadge: View {
             Text(TideModel.timeString(event.time))
                 .font(.system(.largeTitle, design: .rounded).weight(.semibold))
                 .monospacedDigit()
-            Text("\(countdown(to: event.time)) · \(TideModel.heightString(event.height))")
+            Text(verbatim: "\(countdown(to: event.time)) · \(TideModel.heightString(event.height))")
                 .font(.caption)
                 .foregroundStyle(.secondary)
                 .monospacedDigit()
@@ -226,7 +226,7 @@ private struct EventStrip: View {
                         .foregroundStyle(.secondary)
                         .monospacedDigit()
                     if let c = ev.coefficient {
-                        Text("\(c)")
+                        Text(verbatim: "\(c)")
                             .font(.caption2.weight(.semibold))
                             .padding(.horizontal, 5)
                             .padding(.vertical, 1)

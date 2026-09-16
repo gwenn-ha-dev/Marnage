@@ -237,7 +237,7 @@ struct TideCurveView: View {
                 .fill(palette.stroke)
                 .frame(width: 7, height: 7)
                 .position(x: hx, y: y(h, plot))
-            Text("\(TideModel.timeString(d)) · \(TideModel.heightString(h))")
+            Text(verbatim: "\(TideModel.timeString(d)) · \(TideModel.heightString(h))")
                 .font(.caption.weight(.medium))
                 .monospacedDigit()
                 .padding(.horizontal, 7)

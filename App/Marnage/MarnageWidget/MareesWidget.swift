@@ -139,7 +139,7 @@ private struct SmallTideView: View {
                     .lineLimit(1)
                 Spacer()
                 if let c = entry.todays.compactMap(\.coefficient).max() {
-                    Text("\(c)")
+                    Text(verbatim: "\(c)")
                         .font(.caption2.weight(.semibold))
                         .padding(.horizontal, 5)
                         .background(.quaternary, in: Capsule())
