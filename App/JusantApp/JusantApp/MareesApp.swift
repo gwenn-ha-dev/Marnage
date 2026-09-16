@@ -1,8 +1,8 @@
 import SwiftUI
-import MareeKit
+import JusantKit
 
 @main
-struct MareesApp: App {
+struct JusantApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

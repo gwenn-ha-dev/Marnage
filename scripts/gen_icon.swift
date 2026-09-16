@@ -1,7 +1,7 @@
-// Génère l'icône macOS de MareesApp : squircle océan, courbe de marée,
+// Génère l'icône macOS de JusantApp : squircle océan, courbe de marée,
 // marqueur « maintenant » et lune. Redessin vectoriel à chaque taille.
 //
-//   swift scripts/gen_icon.swift App/MareesApp/MareesApp/Assets.xcassets/AppIcon.appiconset
+//   swift scripts/gen_icon.swift App/JusantApp/JusantApp/Assets.xcassets/AppIcon.appiconset
 //
 // Aucune dépendance hors frameworks système.
 

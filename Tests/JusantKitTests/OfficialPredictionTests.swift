@@ -1,5 +1,5 @@
 import XCTest
-@testable import MareeKit
+@testable import JusantKit
 
 /// Confrontation aux prédictions officielles du SHOM.
 ///

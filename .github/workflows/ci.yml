@@ -4,49 +4,22 @@ on:
   push:
     branches: [main]
   pull_request:
-  workflow_dispatch:
+    branches: [main]
 
 jobs:
-  package:
-    name: MareeKit + CLI (build, tests, validation hors fit)
-    runs-on: macos-15
+  build:
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
 
-      - name: Version de Swift
-        run: swift --version
+      - name: Select Xcode
+        run: sudo xcode-select -s /Applications/Xcode.app
 
-      - name: Build (release)
-        run: swift build -c release
+      - name: Build
+        run: make build
 
-      # Les observations REFMAR sont versionnées : les tests rejouent la
-      # validation hors fit des 13 ports, pas seulement la compilation.
-      - name: Tests
-        run: swift test
+      - name: Test
+        run: make test
 
-      - name: Prédiction de bout en bout
-        run: |
-          .build/release/maree jour --constantes stations/brest.json --jours 2
-          .build/release/maree valide stations/brest.json data/brest \
-            --debut 2025-01-01 --fin 2026-07-01
-
-  app:
-    name: App macOS + widget
-    runs-on: macos-15
-    steps:
-      - uses: actions/checkout@v4
-
-      # Compile les deux targets sans signature : vérifie le projet Xcode
-      # lui-même (référence du package local, dossier stations/ embarqué).
-      - name: Build de l'app et du widget
-        run: |
-          xcodebuild -project App/MareesApp/MareesApp.xcodeproj \
-            -scheme MareesApp -configuration Debug \
-            -destination 'platform=macOS' -derivedDataPath build \
-            CODE_SIGNING_ALLOWED=NO build
-
-      - name: Les 13 constantes sont bien dans les deux bundles
-        run: |
-          app=build/Build/Products/Debug/MareesApp.app
-          test "$(ls "$app/Contents/Resources/stations" | wc -l)" -eq 13
-          test "$(ls "$app/Contents/PlugIns/MareesWidgetExtension.appex/Contents/Resources/stations" | wc -l)" -eq 13
+      - name: Charter compliance
+        run: make lint

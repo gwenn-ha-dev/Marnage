@@ -1,12 +1,12 @@
 import WidgetKit
 import SwiftUI
 import AppIntents
-import MareeKit
+import JusantKit
 
 @main
-struct MareesWidgetBundle: WidgetBundle {
+struct JusantWidgetBundle: WidgetBundle {
     var body: some Widget {
-        MareesWidget()
+        JusantWidget()
     }
 }
 
@@ -95,11 +95,11 @@ struct TideProvider: AppIntentTimelineProvider {
     }
 }
 
-struct MareesWidget: Widget {
+struct JusantWidget: Widget {
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: "MareesWidget", intent: SelectStationIntent.self,
+        AppIntentConfiguration(kind: "JusantWidget", intent: SelectStationIntent.self,
                                provider: TideProvider()) { entry in
-            MareesWidgetView(entry: entry)
+            JusantWidgetView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .configurationDisplayName("Marées")
@@ -111,7 +111,7 @@ struct MareesWidget: Widget {
     }
 }
 
-struct MareesWidgetView: View {
+struct JusantWidgetView: View {
     @Environment(\.widgetFamily) private var family
     let entry: TideTimelineEntry
 
