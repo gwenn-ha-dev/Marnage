@@ -1,4 +1,4 @@
-# Contributing to Jusant
+# Contributing to Marnage
 
 Thanks for taking the time. This project follows the gwenn-ha-dev project
 charter — the short version is below.

@@ -1,9 +1,9 @@
-# Jusant — build interface, identical across every gwenn-ha-dev project.
+# Marnage — build interface, identical across every gwenn-ha-dev project.
 # See ../Charte/CHARTE.md §5. This file delegates; it never reimplements.
 
-NAME     := Jusant
-BIN      := jusant
-BUNDLE   := dev.gwennha.Jusant
+NAME     := Marnage
+BIN      := marnage
+BUNDLE   := dev.gwennha.Marnage
 # KIND: spm | xcode | swiftc   —   PLATFORM: macos | ios
 KIND     := spm
 PLATFORM := macos

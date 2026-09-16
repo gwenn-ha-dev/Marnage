@@ -1,6 +1,6 @@
 # Changelog
 
-All notable changes to Jusant are documented here.
+All notable changes to Marnage are documented here.
 Format: [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Versioning: [SemVer](https://semver.org/spec/v2.0.0.html).
 
@@ -11,5 +11,5 @@ Versioning: [SemVer](https://semver.org/spec/v2.0.0.html).
 ### Added
 - Initial release.
 
-[Unreleased]: https://github.com/gwenn-ha-dev/Jusant/compare/v0.1.0...HEAD
-[0.1.0]: https://github.com/gwenn-ha-dev/Jusant/releases/tag/v0.1.0
+[Unreleased]: https://github.com/gwenn-ha-dev/Marnage/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/gwenn-ha-dev/Marnage/releases/tag/v0.1.0
