@@ -1,5 +1,5 @@
 import XCTest
-@testable import JusantKit
+@testable import MarnageKit
 
 /// Non-régression sur données réelles : rejoue la validation hors fit du README
 /// (constantes stations/brest.json, observations REFMAR 2025-01 → 2026-07) avec des
@@ -9,7 +9,7 @@ import XCTest
 final class ValidationTests: XCTestCase {
     /// Racine du repo, déduite de l'emplacement de ce fichier.
     static let repoRoot = URL(fileURLWithPath: #filePath)
-        .deletingLastPathComponent()   // JusantKitTests
+        .deletingLastPathComponent()   // MarnageKitTests
         .deletingLastPathComponent()   // Tests
         .deletingLastPathComponent()
 

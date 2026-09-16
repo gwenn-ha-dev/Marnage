@@ -1,7 +1,7 @@
 import XCTest
-@testable import JusantKit
+@testable import MarnageKit
 
-final class JusantKitTests: XCTestCase {
+final class MarnageKitTests: XCTestCase {
     /// Les vitesses angulaires des constituants principaux doivent correspondre
     /// aux valeurs de référence (degrés/heure, table IHO).
     func testConstituentSpeeds() {

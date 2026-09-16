@@ -1,5 +1,5 @@
 import XCTest
-@testable import JusantKit
+@testable import MarnageKit
 
 /// Garde-fous sur la table des constituants : vitesses conformes aux valeurs
 /// publiées, et séparabilité effective sur la durée d'analyse.

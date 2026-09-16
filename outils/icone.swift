@@ -16,7 +16,7 @@ import UniformTypeIdentifiers
 
 // ---------------------------------------------------------------- per project
 
-let NAME = "Jusant"
+let NAME = "Marnage"
 let FAMILY = Family.tools
 
 /// The glyph, white, inside `box` — the centred 56 % of the canvas.

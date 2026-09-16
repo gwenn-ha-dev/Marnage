@@ -1,8 +1,8 @@
 import SwiftUI
-import JusantKit
+import MarnageKit
 
 @main
-struct JusantApp: App {
+struct Marnage: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

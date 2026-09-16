@@ -1,10 +1,10 @@
-# Jusant — agent context
+# Marnage — agent context
 
 ## What this is
 
 Tide prediction for French ports, in pure Swift, **zero dependencies** (no LAPACK, no external package). The engine computes its own harmonic constants from public tide-gauge observations — it reuses no SHOM prediction and no SHOM constant.
 
-Platform: macOS 14+. Build system: Swift Package Manager. Bundle ID `dev.gwennha.Jusant`.
+Platform: macOS 14+. Build system: Swift Package Manager. Bundle ID `dev.gwennha.Marnage`.
 
 ## Build and test
 
