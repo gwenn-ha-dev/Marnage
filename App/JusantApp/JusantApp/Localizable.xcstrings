@@ -1,0 +1,57 @@
+{
+  "sourceLanguage": "fr",
+  "strings": {
+    "Coefficient de marée": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tide coefficient"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coefficient de marée"
+          }
+        }
+      }
+    },
+    "Coefficient de marée du jour (max)": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Today's tide coefficient (max)"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Coefficient de marée du jour (max)"
+          }
+        }
+      }
+    },
+    "coef %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "coef %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "coef %@"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

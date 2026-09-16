@@ -1,5 +1,5 @@
 import XCTest
-@testable import MareeKit
+@testable import JusantKit
 
 /// Garde-fous sur la table des constituants : vitesses conformes aux valeurs
 /// publiées, et séparabilité effective sur la durée d'analyse.

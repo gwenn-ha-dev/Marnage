@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		E4B675E13037000000000002 /* stations in Resources */ = {isa = PBXBuildFile; fileRef = E4B675E13037000000000001 /* stations */; };
 		E4B675E13037000000000003 /* stations in Resources */ = {isa = PBXBuildFile; fileRef = E4B675E13037000000000001 /* stations */; };
-		E4B674FE3036E78600EF9965 /* MareeKit in Frameworks */ = {isa = PBXBuildFile; productRef = E4B674FD3036E78600EF9965 /* MareeKit */; };
+		E4B674FE3036E78600EF9965 /* JusantKit in Frameworks */ = {isa = PBXBuildFile; productRef = E4B674FD3036E78600EF9965 /* JusantKit */; };
 		E4B675063036E7D000EF9965 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B675053036E7D000EF9965 /* WidgetKit.framework */; };
 		E4B675083036E7D000EF9965 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4B675073036E7D000EF9965 /* SwiftUI.framework */; };
-		E4B675153036E7D100EF9965 /* MareesWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E4B675033036E7D000EF9965 /* MareesWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		E4B6751C3036E80100EF9965 /* MareeKit in Frameworks */ = {isa = PBXBuildFile; productRef = E4B6751B3036E80100EF9965 /* MareeKit */; };
+		E4B675153036E7D100EF9965 /* JusantWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E4B675033036E7D000EF9965 /* JusantWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E4B6751C3036E80100EF9965 /* JusantKit in Frameworks */ = {isa = PBXBuildFile; productRef = E4B6751B3036E80100EF9965 /* JusantKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,7 +22,7 @@
 			containerPortal = E4B674E63036E5B000EF9965 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E4B675023036E7D000EF9965;
-			remoteInfo = MareesWidgetExtension;
+			remoteInfo = JusantWidgetExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -33,7 +33,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				E4B675153036E7D100EF9965 /* MareesWidgetExtension.appex in Embed Foundation Extensions */,
+				E4B675153036E7D100EF9965 /* JusantWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -42,45 +42,45 @@
 
 /* Begin PBXFileReference section */
 		E4B675E13037000000000001 /* stations */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stations; path = ../../stations; sourceTree = "<group>"; };
-		E4B674EE3036E5B000EF9965 /* MareesApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MareesApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4B675033036E7D000EF9965 /* MareesWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MareesWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B674EE3036E5B000EF9965 /* JusantApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JusantApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B675033036E7D000EF9965 /* JusantWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = JusantWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B675053036E7D000EF9965 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		E4B675073036E7D000EF9965 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		E4B675163036E7D100EF9965 /* Exceptions for "MareesWidget" folder in "MareesWidgetExtension" target */ = {
+		E4B675163036E7D100EF9965 /* Exceptions for "JusantWidget" folder in "JusantWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = E4B675023036E7D000EF9965 /* MareesWidgetExtension */;
+			target = E4B675023036E7D000EF9965 /* JusantWidgetExtension */;
 		};
-		E4B675263036EA6E00EF9965 /* Exceptions for "MareesApp" folder in "MareesWidgetExtension" target */ = {
+		E4B675263036EA6E00EF9965 /* Exceptions for "JusantApp" folder in "JusantWidgetExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				TideCurve.swift,
 				TideModel.swift,
 			);
-			target = E4B675023036E7D000EF9965 /* MareesWidgetExtension */;
+			target = E4B675023036E7D000EF9965 /* JusantWidgetExtension */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		E4B674F03036E5B000EF9965 /* MareesApp */ = {
+		E4B674F03036E5B000EF9965 /* JusantApp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				E4B675263036EA6E00EF9965 /* Exceptions for "MareesApp" folder in "MareesWidgetExtension" target */,
+				E4B675263036EA6E00EF9965 /* Exceptions for "JusantApp" folder in "JusantWidgetExtension" target */,
 			);
-			path = MareesApp;
+			path = JusantApp;
 			sourceTree = "<group>";
 		};
-		E4B675093036E7D000EF9965 /* MareesWidget */ = {
+		E4B675093036E7D000EF9965 /* JusantWidget */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				E4B675163036E7D100EF9965 /* Exceptions for "MareesWidget" folder in "MareesWidgetExtension" target */,
+				E4B675163036E7D100EF9965 /* Exceptions for "JusantWidget" folder in "JusantWidgetExtension" target */,
 			);
-			path = MareesWidget;
+			path = JusantWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4B674FE3036E78600EF9965 /* MareeKit in Frameworks */,
+				E4B674FE3036E78600EF9965 /* JusantKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +100,7 @@
 			files = (
 				E4B675083036E7D000EF9965 /* SwiftUI.framework in Frameworks */,
 				E4B675063036E7D000EF9965 /* WidgetKit.framework in Frameworks */,
-				E4B6751C3036E80100EF9965 /* MareeKit in Frameworks */,
+				E4B6751C3036E80100EF9965 /* JusantKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,8 +110,8 @@
 		E4B674E53036E5B000EF9965 = {
 			isa = PBXGroup;
 			children = (
-				E4B674F03036E5B000EF9965 /* MareesApp */,
-				E4B675093036E7D000EF9965 /* MareesWidget */,
+				E4B674F03036E5B000EF9965 /* JusantApp */,
+				E4B675093036E7D000EF9965 /* JusantWidget */,
 				E4B675E13037000000000001 /* stations */,
 				E4B675043036E7D000EF9965 /* Frameworks */,
 				E4B674EF3036E5B000EF9965 /* Products */,
@@ -121,8 +121,8 @@
 		E4B674EF3036E5B000EF9965 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E4B674EE3036E5B000EF9965 /* MareesApp.app */,
-				E4B675033036E7D000EF9965 /* MareesWidgetExtension.appex */,
+				E4B674EE3036E5B000EF9965 /* JusantApp.app */,
+				E4B675033036E7D000EF9965 /* JusantWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -139,9 +139,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E4B674ED3036E5B000EF9965 /* MareesApp */ = {
+		E4B674ED3036E5B000EF9965 /* JusantApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B674F93036E5B100EF9965 /* Build configuration list for PBXNativeTarget "MareesApp" */;
+			buildConfigurationList = E4B674F93036E5B100EF9965 /* Build configuration list for PBXNativeTarget "JusantApp" */;
 			buildPhases = (
 				E4B674EA3036E5B000EF9965 /* Sources */,
 				E4B674EB3036E5B000EF9965 /* Frameworks */,
@@ -154,19 +154,19 @@
 				E4B675143036E7D100EF9965 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				E4B674F03036E5B000EF9965 /* MareesApp */,
+				E4B674F03036E5B000EF9965 /* JusantApp */,
 			);
-			name = MareesApp;
+			name = JusantApp;
 			packageProductDependencies = (
-				E4B674FD3036E78600EF9965 /* MareeKit */,
+				E4B674FD3036E78600EF9965 /* JusantKit */,
 			);
-			productName = MareesApp;
-			productReference = E4B674EE3036E5B000EF9965 /* MareesApp.app */;
+			productName = JusantApp;
+			productReference = E4B674EE3036E5B000EF9965 /* JusantApp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E4B675023036E7D000EF9965 /* MareesWidgetExtension */ = {
+		E4B675023036E7D000EF9965 /* JusantWidgetExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E4B675173036E7D100EF9965 /* Build configuration list for PBXNativeTarget "MareesWidgetExtension" */;
+			buildConfigurationList = E4B675173036E7D100EF9965 /* Build configuration list for PBXNativeTarget "JusantWidgetExtension" */;
 			buildPhases = (
 				E4B674FF3036E7D000EF9965 /* Sources */,
 				E4B675003036E7D000EF9965 /* Frameworks */,
@@ -177,14 +177,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				E4B675093036E7D000EF9965 /* MareesWidget */,
+				E4B675093036E7D000EF9965 /* JusantWidget */,
 			);
-			name = MareesWidgetExtension;
+			name = JusantWidgetExtension;
 			packageProductDependencies = (
-				E4B6751B3036E80100EF9965 /* MareeKit */,
+				E4B6751B3036E80100EF9965 /* JusantKit */,
 			);
-			productName = MareesWidgetExtension;
-			productReference = E4B675033036E7D000EF9965 /* MareesWidgetExtension.appex */;
+			productName = JusantWidgetExtension;
+			productReference = E4B675033036E7D000EF9965 /* JusantWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -207,7 +207,7 @@
 					};
 				};
 			};
-			buildConfigurationList = E4B674E93036E5B000EF9965 /* Build configuration list for PBXProject "MareesApp" */;
+			buildConfigurationList = E4B674E93036E5B000EF9965 /* Build configuration list for PBXProject "JusantApp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -224,8 +224,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E4B674ED3036E5B000EF9965 /* MareesApp */,
-				E4B675023036E7D000EF9965 /* MareesWidgetExtension */,
+				E4B674ED3036E5B000EF9965 /* JusantApp */,
+				E4B675023036E7D000EF9965 /* JusantWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -269,7 +269,7 @@
 /* Begin PBXTargetDependency section */
 		E4B675143036E7D100EF9965 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E4B675023036E7D000EF9965 /* MareesWidgetExtension */;
+			target = E4B675023036E7D000EF9965 /* JusantWidgetExtension */;
 			targetProxy = E4B675133036E7D100EF9965 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -416,14 +416,14 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thierrylebris.MareesApp;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.gwennha.Jusant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MareesApp/MareesApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JusantApp/JusantApp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -451,14 +451,14 @@
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thierrylebris.MareesApp;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.gwennha.Jusant;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MareesApp/MareesApp-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JusantApp/JusantApp-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -476,7 +476,7 @@
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MareesWidget/Info.plist;
+				INFOPLIST_FILE = JusantWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Marées";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -486,13 +486,13 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thierrylebris.MareesApp.MareesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.gwennha.Jusant.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MareesWidget/MareesWidgetExtension-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JusantWidget/JusantWidgetExtension-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -511,7 +511,7 @@
 				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MareesWidget/Info.plist;
+				INFOPLIST_FILE = JusantWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Marées";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -521,13 +521,13 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 26.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.thierrylebris.MareesApp.MareesWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.gwennha.Jusant.Widget;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "MareesWidget/MareesWidgetExtension-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "JusantWidget/JusantWidgetExtension-Bridging-Header.h";
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -536,7 +536,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E4B674E93036E5B000EF9965 /* Build configuration list for PBXProject "MareesApp" */ = {
+		E4B674E93036E5B000EF9965 /* Build configuration list for PBXProject "JusantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B674F73036E5B100EF9965 /* Debug */,
@@ -545,7 +545,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B674F93036E5B100EF9965 /* Build configuration list for PBXNativeTarget "MareesApp" */ = {
+		E4B674F93036E5B100EF9965 /* Build configuration list for PBXNativeTarget "JusantApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B674FA3036E5B100EF9965 /* Debug */,
@@ -554,7 +554,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E4B675173036E7D100EF9965 /* Build configuration list for PBXNativeTarget "MareesWidgetExtension" */ = {
+		E4B675173036E7D100EF9965 /* Build configuration list for PBXNativeTarget "JusantWidgetExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				E4B675183036E7D100EF9965 /* Debug */,
@@ -573,14 +573,14 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		E4B674FD3036E78600EF9965 /* MareeKit */ = {
+		E4B674FD3036E78600EF9965 /* JusantKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			productName = MareeKit;
+			productName = JusantKit;
 		};
-		E4B6751B3036E80100EF9965 /* MareeKit */ = {
+		E4B6751B3036E80100EF9965 /* JusantKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E4B674FC3036E78600EF9965 /* XCLocalSwiftPackageReference "../.." */;
-			productName = MareeKit;
+			productName = JusantKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

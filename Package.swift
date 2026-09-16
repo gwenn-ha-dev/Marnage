@@ -2,15 +2,15 @@
 import PackageDescription
 
 let package = Package(
-    name: "Marees",
+    name: "Jusant",
     platforms: [.macOS(.v13), .iOS(.v16)],
     products: [
-        .library(name: "MareeKit", targets: ["MareeKit"]),
-        .executable(name: "maree", targets: ["maree"]),
+        .library(name: "JusantKit", targets: ["JusantKit"]),
+        .executable(name: "jusant", targets: ["jusant"]),
     ],
     targets: [
-        .target(name: "MareeKit"),
-        .executableTarget(name: "maree", dependencies: ["MareeKit"]),
-        .testTarget(name: "MareeKitTests", dependencies: ["MareeKit"]),
+        .target(name: "JusantKit"),
+        .executableTarget(name: "jusant", dependencies: ["JusantKit"]),
+        .testTarget(name: "JusantKitTests", dependencies: ["JusantKit"]),
     ]
 )

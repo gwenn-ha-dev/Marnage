@@ -1,5 +1,5 @@
 import Foundation
-import MareeKit
+import JusantKit
 
 /// Un port embarqué : constantes harmoniques + prédicteur prêt à l'emploi.
 struct TideStation: Identifiable, Hashable {

@@ -1,7 +1,7 @@
 import XCTest
-@testable import MareeKit
+@testable import JusantKit
 
-final class MareeKitTests: XCTestCase {
+final class JusantKitTests: XCTestCase {
     /// Les vitesses angulaires des constituants principaux doivent correspondre
     /// aux valeurs de référence (degrés/heure, table IHO).
     func testConstituentSpeeds() {
