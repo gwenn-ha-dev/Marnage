@@ -31,7 +31,27 @@ the `Makefile`. It is the same interface in every project here.
 - Identifiers, commit messages and both READMEs are in **English**; comments may
   be in English or French (charter §2).
 
-- The test target currently has **no tests**. `make test` passes vacuously; do not read that as coverage.
+- `make test` runs 16 XCTest cases (Cholesky, constituent speeds, predictions);
+  `testAgainstOfficialPredictions` stays skipped until official SHOM readings are
+  entered — it waits for data, not code.
+- **`Text(cond ? "a" : "b")` is never translated**: a ternary yields a `String`,
+  which takes `Text`'s verbatim overload. Write `cond ? Text("a") : Text("b")`.
+  No `Locale(identifier: "fr_FR")` either: dates and numbers follow the app's
+  language. The app and the widget each have their own `Localizable.xcstrings`.
+
+## Public identity and releases (charter §12)
+
+- Commit as `gwenn-ha-dev <13298867+gwenn-ha-dev@users.noreply.github.com>` (set
+  in this repo's git config) and in UTC: `TZ=UTC git commit …`. No personal name,
+  email or `/Users/…` path in tracked files. `../../Charte/outils/identite.sh .` checks.
+- A release: `make package && make sign && make dmg && make shots && make release-check`,
+  then tag `v<version>` and attach `build/Marnage-<version>.dmg` — see
+  `../../Charte/DISTRIBUTION-AGENT.md`, phase 3. The version is `MARKETING_VERSION`
+  in `App/Marnage/Marnage.xcodeproj`.
+- The app is built by Xcode (`outils/package.sh`), signed "Apple Development"
+  with `get-task-allow`; `make sign` re-signs every piece with the Developer ID,
+  keeping each one's own entitlements (the widget keeps its sandbox) minus
+  `get-task-allow`, which the notary refuses.
 
 ## Layout
 

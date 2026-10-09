@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marnage — tide prediction for French ports, on your Mac</title>
+<meta name="description" content="Free, open-source macOS app and widget for the tides of 13 French ports, from Dunkirk to the Basque coast. Its own harmonic analysis of public tide-gauge observations, in pure Swift.">
+<link rel="canonical" href="https://gwenn-ha-dev.github.io/Marnage/">
+<link rel="icon" href="images/icon.png" type="image/png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Marnage — tide prediction for French ports, on your Mac">
+<meta property="og:description" content="Free, open-source macOS app and widget for the tides of 13 French ports, from Dunkirk to the Basque coast. Its own harmonic analysis of public tide-gauge observations, in pure Swift.">
+<meta property="og:url" content="https://gwenn-ha-dev.github.io/Marnage/">
+<meta property="og:image" content="https://gwenn-ha-dev.github.io/Marnage/images/social-preview.jpg">
+<meta property="og:image:width" content="1280">
+<meta property="og:image:height" content="640">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://gwenn-ha-dev.github.io/Marnage/images/social-preview.jpg">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Marnage",
+ "operatingSystem":"macOS 26.5 or later","applicationCategory":"UtilitiesApplication",
+ "description":"Free, open-source macOS app and widget for the tides of 13 French ports, from Dunkirk to the Basque coast. Its own harmonic analysis of public tide-gauge observations, in pure Swift.",
+ "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://opensource.org/licenses/MIT",
+ "downloadUrl":"https://github.com/gwenn-ha-dev/Marnage/releases/latest",
+ "codeRepository":"https://github.com/gwenn-ha-dev/Marnage","image":"https://gwenn-ha-dev.github.io/Marnage/images/saint-malo.png"}
+</script>
+<style>
+  :root {
+    --bg: #ffffff; --panel: #f4f5f7; --line: #e2e4e8; --text: #16181d; --muted: #5d6170;
+    --accent: #2f7d5b; --accent-text: #fff; --link: #1f5fbf;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111214; --panel: #1b1c1f; --line: #2c2d31; --text: #ececee; --muted: #a2a3a8; --link: #8ab4ff; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+         font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif; }
+  a { color: var(--link); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  header { padding: 72px 0 40px; text-align: center; }
+  .icon { width: 96px; height: 96px; }
+  h1 { font-size: clamp(34px, 6vw, 56px); margin: 12px 0 4px; letter-spacing: -0.02em; }
+  .lead { font-size: clamp(19px, 2.6vw, 23px); max-width: 760px; margin: 0 auto 28px; }
+  .cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .btn { display: inline-block; padding: 12px 22px; border-radius: 10px; text-decoration: none;
+         font-weight: 600; border: 1px solid var(--line); color: var(--text); background: var(--panel); }
+  .btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-text); }
+  .req { color: var(--muted); font-size: 14px; margin-top: 12px; }
+  figure { margin: 0; }
+  .shot img, .hero img { max-width: 100%; height: auto; display: block; margin: 0 auto; border-radius: 12px; }
+  figcaption { color: var(--muted); font-size: 14px; margin-top: 8px; text-align: center; }
+  section { padding: 48px 0; border-top: 1px solid var(--line); }
+  h2 { font-size: 28px; margin: 0 0 20px; letter-spacing: -0.01em; }
+  .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 18px 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 18px; }
+  .card p { margin: 0; color: var(--muted); font-size: 15.5px; }
+  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
+  .split.rev .text { order: 2; }
+  @media (max-width: 760px) { .split { grid-template-columns: 1fr; } .split.rev .text { order: 0; } }
+  code { font: 14.5px ui-monospace, "SF Mono", Menlo, monospace; background: var(--panel);
+         padding: 2px 6px; border-radius: 6px; border: 1px solid var(--line); }
+  footer { padding: 36px 0 56px; color: var(--muted); font-size: 14px; text-align: center;
+           border-top: 1px solid var(--line); }
+</style>
+</head>
+<body>
+<header class="wrap">
+  <img class="icon" src="images/icon.png" width="96" height="96" alt="">
+  <h1>Marnage</h1>
+  <p class="lead">The tides of 13 French ports, from Dunkirk to the Basque coast: the day’s curve, high and low waters, the coefficient, and a widget for the desktop. Computed on your Mac from public tide-gauge observations.</p>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/gwenn-ha-dev/Marnage/releases/latest">Download for macOS</a>
+    <a class="btn" href="https://github.com/gwenn-ha-dev/Marnage">Source on GitHub</a>
+  </div>
+  <p class="req">Free and open source (MIT) · macOS 26.5 or later · signed and notarized · English and French</p>
+</header>
+
+<div class="wrap hero">
+  <figure>
+    <img src="images/saint-malo.png" alt="Marnage on Saint-Malo: the day’s tide curve with high waters at 06:58 and 19:13, coefficient 91, and the four tides of the day">
+    <figcaption>Saint-Malo, one of the largest tidal ranges in Europe: more than 10 m between low and high water.</figcaption>
+  </figure>
+</div>
+
+<section class="wrap" style="margin-top:48px">
+  <h2>Why Marnage</h2>
+  <div class="grid3">
+    <div class="card"><h3>Its own analysis</h3><p>Harmonic constants fitted by least squares on two years of REFMAR observations — 33 constituents, 43 where shallow water distorts the tide. No SHOM prediction or constant is reused.</p></div>
+    <div class="card"><h3>13 ports</h3><p>Dunkirk, Boulogne, Dieppe, Le Havre, Cherbourg, Saint-Malo, Roscoff, Le Conquet, Brest, Concarneau, Saint-Nazaire, La Rochelle, Boucau-Bayonne.</p></div>
+    <div class="card"><h3>A widget</h3><p>Small or medium, one port each, on the desktop or in Notification Center: the next tide, its height, the curve.</p></div>
+    <div class="card"><h3>Nothing to set up</h3><p>No account, no network: the constants ship with the app, the prediction runs locally.</p></div>
+    <div class="card"><h3>A command line too</h3><p><code>marnage</code> analyses raw observations, validates on held-out data and prints a day’s tides.</p></div>
+    <div class="card"><h3>Pure Swift</h3><p>Zero dependencies — not even LAPACK. Open source, MIT.</p></div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="split">
+    <div class="text">
+      <h2>Where the sea lingers</h2>
+      <p>At Le Havre the high water stands for hours. A plain sine would miss it; the shallow-water
+        constituents the analysis adds reproduce it.</p>
+    </div>
+    <figure class="shot"><img src="images/le-havre.png" alt="Le Havre: the curve flattens for two hours around each high water, at about 8 m" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="split rev">
+    <div class="text">
+      <h2>A regular port, a week ahead</h2>
+      <p>Brest, where the tide coefficient is defined. Pick any of the next seven days from the strip;
+        hover the curve to read the height at any minute.</p>
+    </div>
+    <figure class="shot"><img src="images/brest.png" alt="Brest: high waters of 6.87 m and 7.20 m, low waters near 1.5 m, with the seven-day strip above" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="wrap" style="text-align:center">
+  <h2>Get it</h2>
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/gwenn-ha-dev/Marnage/releases/latest">Download the .dmg</a>
+    <a class="btn" href="https://github.com/gwenn-ha-dev/Marnage#readme">Read the README</a>
+    <a class="btn" href="https://github.com/gwenn-ha-dev/Marnage/blob/main/README.fr.md">En français</a>
+  </div>
+  <p class="req">Open the .dmg, drag Marnage onto Applications. It is signed with a Developer ID and notarized by Apple: it opens with a double click.</p>
+</section>
+
+<footer class="wrap">
+  Marnage · MIT · <a href="https://github.com/gwenn-ha-dev/Marnage">github.com/gwenn-ha-dev/Marnage</a>
+</footer>
+</body>
+</html>
