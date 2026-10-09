@@ -172,7 +172,7 @@ dmg: ## Notarized .dmg of the signed app, in build/
 	"$(CHARTE)/outils/dmg.sh" "$(APP)" "$(BUILD_DIR)"
 
 shots: ## Retake the README captures (outils/captures.sh)
-	@if [ -x outils/captures.sh ]; then ./outils/captures.sh; \
+	@if [ -x outils/captures.sh ]; then "$(CHARTE)/outils/jeton-ecran.sh" ./outils/captures.sh; \
 	else echo "› no outils/captures.sh — captures are taken by hand, see CHARTE.md §12"; fi
 
 release-check: ## Is build/ publishable? spctl, captures, public identity
