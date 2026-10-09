@@ -1,0 +1,91 @@
+{
+  "sourceLanguage": "fr",
+  "strings": {
+    "Basse mer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Low tide"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basse mer"
+          }
+        }
+      }
+    },
+    "Courbe de marée, pleines et basses mers, coefficient.": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tide curve, high and low waters, coefficient."
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Courbe de marée, pleines et basses mers, coefficient."
+          }
+        }
+      }
+    },
+    "Marées": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Tides"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Marées"
+          }
+        }
+      }
+    },
+    "Pleine mer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "High tide"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pleine mer"
+          }
+        }
+      }
+    },
+    "coef %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "coef %lld"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "coef %lld"
+          }
+        }
+      }
+    }
+  },
+  "version": "1.0"
+}

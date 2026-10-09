@@ -73,11 +73,10 @@ enum TideModel {
         return f
     }()
 
-    private static let french = Locale(identifier: "fr_FR")
-
     static func timeString(_ d: Date) -> String { hourFormatter.string(from: d) }
 
     static func heightString(_ h: Double) -> String {
-        String(format: "%.2f m", locale: french, h)
+        // La virgule ou le point selon la langue de l'app, plus fr_FR en dur.
+        h.formatted(.number.precision(.fractionLength(2))) + " m"
     }
 }

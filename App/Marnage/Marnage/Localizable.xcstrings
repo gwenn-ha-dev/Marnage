@@ -18,6 +18,40 @@
         }
       }
     },
+    "BM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "LW"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "BM"
+          }
+        }
+      }
+    },
+    "Basse mer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Low tide"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Basse mer"
+          }
+        }
+      }
+    },
     "Coefficient de marée": {
       "extractionState": "manual",
       "localizations": {
@@ -41,13 +75,47 @@
         "en": {
           "stringUnit": {
             "state": "translated",
-            "value": "Today's tide coefficient (max)"
+            "value": "Day's tide coefficient (max)"
           }
         },
         "fr": {
           "stringUnit": {
             "state": "translated",
             "value": "Coefficient de marée du jour (max)"
+          }
+        }
+      }
+    },
+    "PM": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "HW"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "PM"
+          }
+        }
+      }
+    },
+    "Pleine mer": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "High tide"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "Pleine mer"
           }
         }
       }
@@ -65,6 +133,57 @@
           "stringUnit": {
             "state": "translated",
             "value": "coef %@"
+          }
+        }
+      }
+    },
+    "coef %lld": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "coef %lld"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "coef %lld"
+          }
+        }
+      }
+    },
+    "dans %lld h %@": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "in %lld h %@"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dans %lld h %@"
+          }
+        }
+      }
+    },
+    "dans %lld min": {
+      "extractionState": "manual",
+      "localizations": {
+        "en": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "in %lld min"
+          }
+        },
+        "fr": {
+          "stringUnit": {
+            "state": "translated",
+            "value": "dans %lld min"
           }
         }
       }

@@ -102,11 +102,12 @@ struct MarnageWidget: Widget {
             MarnageWidgetView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .configurationDisplayName("Marées")
+        .configurationDisplayName(Text(verbatim: String(localized: "Marées")))
         // Text(verbatim:) : un literal interpolé passerait par l'overload
         // LocalizedStringKey de .description, qui asserte dans WidgetKit et
-        // tue l'extension à la découverte des widgets.
-        .description(Text(verbatim: "Courbe de marée, pleines et basses mers, coefficient."))
+        // tue l'extension à la découverte des widgets. La traduction passe donc
+        // par String(localized:), résolue avant d'atteindre WidgetKit.
+        .description(Text(verbatim: String(localized: "Courbe de marée, pleines et basses mers, coefficient.")))
         .supportedFamilies([.systemSmall, .systemMedium])
     }
 }
@@ -150,7 +151,7 @@ private struct SmallTideView: View {
                     Image(systemName: next.kind == .high ? "arrow.up.circle.fill" : "arrow.down.circle.fill")
                         .foregroundStyle(next.kind == .high ? .blue : .teal)
                         .font(.caption)
-                    Text(next.kind == .high ? "Pleine mer" : "Basse mer")
+                    (next.kind == .high ? Text("Pleine mer") : Text("Basse mer"))
                         .font(.caption.weight(.medium))
                 }
                 .padding(.top, 3)

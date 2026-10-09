@@ -119,10 +119,12 @@ private struct Header: View {
         }
     }
 
+    // La langue de l'app, pas fr_FR en dur : un gabarit, que le formateur
+    // ordonne lui-même (« jeudi 20 août », « Thursday 20 August »).
     static let longDay: DateFormatter = {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "fr_FR")
-        f.dateFormat = "EEEE d MMMM"
+        f.locale = .autoupdatingCurrent
+        f.setLocalizedDateFormatFromTemplate("EEEEdMMMM")
         return f
     }()
 }
@@ -136,7 +138,7 @@ private struct NextEventBadge: View {
             HStack(spacing: 5) {
                 Image(systemName: event.kind == .high ? "arrow.up.circle.fill" : "arrow.down.circle.fill")
                     .foregroundStyle(event.kind == .high ? .blue : .teal)
-                Text(event.kind == .high ? "Pleine mer" : "Basse mer")
+                (event.kind == .high ? Text("Pleine mer") : Text("Basse mer"))
                     .font(.callout.weight(.medium))
             }
             Text(TideModel.timeString(event.time))
@@ -151,7 +153,8 @@ private struct NextEventBadge: View {
 
     private func countdown(to d: Date) -> String {
         let m = max(0, Int(d.timeIntervalSince(now) / 60))
-        return m < 60 ? "dans \(m) min" : "dans \(m / 60) h \(String(format: "%02d", m % 60))"
+        return m < 60 ? String(localized: "dans \(m) min")
+                      : String(localized: "dans \(m / 60) h \(String(format: "%02d", m % 60))")
     }
 }
 
@@ -188,8 +191,8 @@ private struct DayStrip: View {
 
     static let weekday: DateFormatter = {
         let f = DateFormatter()
-        f.locale = Locale(identifier: "fr_FR")
-        f.dateFormat = "EEE"
+        f.locale = .autoupdatingCurrent
+        f.setLocalizedDateFormatFromTemplate("EEE")
         return f
     }()
     static let dayNum: DateFormatter = {
@@ -213,7 +216,7 @@ private struct EventStrip: View {
                         Image(systemName: ev.kind == .high ? "arrow.up" : "arrow.down")
                             .font(.caption.weight(.bold))
                             .foregroundStyle(ev.kind == .high ? .blue : .teal)
-                        Text(ev.kind == .high ? "PM" : "BM")
+                        (ev.kind == .high ? Text("PM") : Text("BM"))
                             .font(.caption2.weight(.semibold))
                             .foregroundStyle(.secondary)
                     }
